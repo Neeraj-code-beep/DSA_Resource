@@ -1,0 +1,19 @@
+package com.neeraj;
+
+import java.util.Scanner;
+
+public class QuesNo9 {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+
+        System.out.println("Enter a String :- ");
+        String str = in.nextLine();
+        String reversed = "";
+
+        for (int i = str.length() - 1; i >= 0; i--) {
+            reversed += str.charAt(i);
+        }
+
+        System.out.println("Reversed String: " + reversed);
+    }
+}
